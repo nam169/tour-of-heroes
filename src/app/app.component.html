@@ -4,7 +4,14 @@
     Welcome to {{ title }}!
   </h1>
   <img width="300" alt="Angular Logo" src="https://cdn4.iconfinder.com/data/icons/heros/100/Super_Hero_1-512.png">
+  <nav>
+      <a routerLink="/heroes">Heroes</a>
+      <br>
+      <a routerLink="/dashboard">Dashboard</a>
 
-  <app-heroes></app-heroes>
+  </nav>
+  <router-outlet></router-outlet>
+
+  
 </div>
 

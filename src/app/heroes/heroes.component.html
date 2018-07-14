@@ -1,10 +1,14 @@
-<div *ngFor="let hero of heroes" (click)="onSelect(hero)">
+<div *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selectedHero]="hero===selectedHero">
+
+
   <div class="hero">
     <div class="hero-name">
-      {{hero}}
+      {{hero.name}}
     </div>
     <div>
-      <img src= />
+      <img src={{hero.avatar}} />
     </div>
+    <div>{{hero.desc}}</div>
   </div>
 </div>
+
